@@ -1,0 +1,32 @@
+{
+    "name": "devkussema/yandra",
+    "description": "Descrição do seu pacote Yandra",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yandra\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/devkussema/yandra"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yandra\\Providers\\YandraServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
